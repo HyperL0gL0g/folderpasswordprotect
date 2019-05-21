@@ -18,7 +18,7 @@ goto End
 :UNLOCK
 echo Enter password to Unlock Your Secure Folder
 set/p "pass=>"
-if NOT %pass%== iamironman FAIL
+if NOT %pass%== iamironman goto FAIL
 attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" mystuffs
 echo Folder Unlocked successfully
